@@ -1,0 +1,46 @@
+<div class="center-foother">
+    <div class="content-foother">
+        <div class="row vert-pad">
+            <div class="left padded">
+                <div class="left-up">
+
+                </div>
+                <div class="left-down">
+                    <div class="Social">
+                        <h1>
+                            Redes Sociales
+                        </h1>
+                        <div class="row-mediaImg">
+                            <img src='{{ url_for('static', filename='facebook.png')}}'/>
+                            <img src='{{ url_for('static', filename='instagram.png')}}'/>
+                            <img src='{{ url_for('static', filename='linkedin.png')}}'/>
+                            <img src='{{ url_for('static', filename='github.png')}}'/>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div id='contacto' class="right padded">
+                <div class="Contact">
+                    <h1>
+                        Contacto
+                    </h1>
+                    <h3>
+                        Ahora o nunca trabajemos juntos :) !!
+                    </h3>
+                    <p>
+                        Dare mi mejor esfuerzo! para aprender...lalalalalala
+                    </p>
+                    <form class="contact-form" method="post" action="{{ url_for('portfolio.mail')}}">
+                        <input name="name" placeholder="Nombre" required/>
+                        <input name="email" placeholder="Email" required type="email"/>
+                        <textarea placeholder="Mensaje" name="message" required minlength="10"></textarea>
+                        <button class="btn">
+                            Enviar
+                        </button>
+                    </form>
+                </div>
+
+            </div>
+        </div>
+    </div>
+</div>
